@@ -1,14 +1,13 @@
-body{
-    margin: 0px;
-    padding: 0px; 
+body{ 
     display:grid;
     height:100vh;
+    width:100vw;
     text-decoration: underline;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size:x-large;
     background-color: rgb(255, 255, 255);
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows:25% 20% 55%;
+    grid-template-rows:15% 15% 70%;
     grid-template-areas:
     'hd hd hd'
     'nv nv nv'
@@ -43,7 +42,9 @@ main{
     padding: 10px;
     margin: 5px; 
     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
     grid-template-areas:
+    'tc tc tc'
     'mt vt fk';
 }
 
@@ -58,7 +59,48 @@ div{
 }
 
 .bild{
-    width: 70%;
+    width: 30%;
 }
 
 
+.title_card{
+    display: flex;
+    grid-area: tc;
+    justify-content: space-between;
+}
+
+#meat{
+    grid-area: mt;
+    font-size:large;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin: 5px;
+}
+
+#vegitarian{
+    grid-area: vt;
+    display: flex;
+    font-size: large;
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin: 5px;
+}
+
+#fika{
+    grid-area: fk;
+    display: flex;
+    font-size: large;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin: 5px;
+}
