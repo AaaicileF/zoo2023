@@ -84,7 +84,7 @@ div{
 
 .part3{
     grid-area: pr3;
-    font-size:large;
+    /* font-size:large; */
     display: flex;
     justify-content:flex-start;
     align-items: center; 
