@@ -3,12 +3,12 @@ body{
     padding: 0px; 
     display:grid;
     height:100vh;
-    text-decoration: underline;
+    /* text-decoration: underline; */
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size:x-large;
     background-color: rgb(255, 255, 255);
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows:25% 20% 55%;
+    grid-template-rows:10% 12% 80%;
     grid-template-areas:
     'hd hd hd'
     'nv nv nv'
@@ -39,12 +39,13 @@ nav{
 main{
     grid-area: mn;
     display: grid;
+    text-decoration:solid;
     background-color: rgb(178, 195, 241);  
     padding: 10px;
     margin: 5px; 
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas:
-    'mt vt fk';
+    'pr1 pr2 pr3';
 }
 
 div{
@@ -57,8 +58,45 @@ div{
     margin: 5px;
 }
 
+.part1{
+    grid-area: pr1;
+    font-size:medium;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center; 
+    flex-direction: column; 
+    flex-wrap: wrap;
+    padding: 10px;
+    margin: 5px;
+}
+
+.part2{
+    grid-area: pr2;
+    font-size:large;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center; 
+    flex-direction: column; 
+    flex-wrap: wrap;
+    padding: 10px;
+    margin: 5px;
+}
+
+.part3{
+    grid-area: pr3;
+    font-size:large;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center; 
+    flex-direction: column; 
+    flex-wrap: wrap;
+    padding: 10px;
+    margin: 5px;
+}
+
+
 .bild{
-    width: 70%;
+    width: 150px;
 }
 
 

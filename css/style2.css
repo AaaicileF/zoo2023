@@ -2,12 +2,12 @@ body{
     display:grid;
     height:100vh;
     width:100vw;
-    text-decoration: underline;
+    /* text-decoration: underline; */
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size:x-large;
     background-color: rgb(255, 255, 255);
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows:15% 15% 70%;
+    grid-template-rows:10% 12% 80%;
     grid-template-areas:
     'hd hd hd'
     'nv nv nv'
@@ -21,7 +21,7 @@ header{
     place-content: center;
     background-color: rgb(171, 118, 221);
     /* padding: 10px; */
-    /*margin: 5px; */
+    /* margin: 5px; */
 }
 
 nav{
@@ -42,7 +42,7 @@ main{
     padding: 10px;
     margin: 5px; 
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto;
+    grid-template-rows: 20% 80%;
     grid-template-areas:
     'tc tc tc'
     'mt vt fk';
@@ -59,20 +59,34 @@ div{
 }
 
 .bild{
-    width: 30%;
+    width: 150px;
 }
 
 
 .title_card{
     display: flex;
     grid-area: tc;
-    justify-content: space-between;
+    justify-content: space-evenly;
+}
+.mat_kort{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;    
 }
 
 #meat{
-    grid-area: mt;
-    font-size:large;
+    /* font-size:large;
     display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex-direction: column; 
+    flex-wrap: wrap;
+    padding: 10px;
+    margin: 5px; */
+    grid-area: mt;
+    display: flex;
+    font-size: large;
     justify-content: flex-start;
     align-items: flex-end;
     flex-direction: column;
@@ -80,6 +94,19 @@ div{
     padding: 10px;
     margin: 5px;
 }
+
+.div1{
+    font-size:medium;
+    display: flex;
+    justify-content:center;
+    align-items: flex-start;
+}
+.div2{
+    font-size:medium;
+    display: flex;
+    justify-content:center;
+    align-items: flex-start;
+} 
 
 #vegitarian{
     grid-area: vt;
