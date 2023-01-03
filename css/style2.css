@@ -1,8 +1,7 @@
-body{ 
+.body2{ 
     display:grid;
-    height:100vh;
+    height:95vh;
     width:100vw;
-    /* text-decoration: underline; */
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size:x-large;
     background-color: rgb(255, 255, 255);
@@ -22,6 +21,9 @@ header{
     background-color: rgb(171, 118, 221);
     /* padding: 10px; */
     /* margin: 5px; */
+    margin-top: 2px;
+    margin-left: 2px;
+    margin-right: 2px;
 }
 
 nav{
@@ -29,10 +31,9 @@ nav{
     display: flex;
     align-items: baseline;
     justify-content: space-evenly;
-    flex: 25;
     background-color: rgb(171, 118, 221);   
-    /* padding: 10px; */
-    /*margin: 5px; */
+    margin-left: 2px;
+    margin-right: 2px;
 }
 
 main{
@@ -40,8 +41,8 @@ main{
     display: grid;
     background-color: rgb(178, 195, 241);  
     padding: 10px;
-    margin: 5px; 
-    grid-template-columns: 1fr 1fr 1fr;
+    margin: 2px; 
+    grid-template-columns: 32% 32% 33%;
     grid-template-rows: 20% 80%;
     grid-template-areas:
     'tc tc tc'
@@ -58,76 +59,96 @@ div{
     margin: 5px;
 }
 
-.bild{
-    width: 150px;
-}
-
 
 .title_card{
     display: flex;
     grid-area: tc;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
 }
+
+
 .mat_kort{
     display: flex;
-    justify-content:center;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content:left;
     align-items: center;
-    flex-direction: column;    
+    flex-direction: column;  
+    
+}
+
+.mat_kort .Bild {
+
+    width: 100%;
+    overflow: hidden;
+    object-fit:fill;
+}
+
+.Bild img {
+    width: 100%;
+}
+
+.text {
+    font-size: 10px;
+    padding: 5px;
+    box-sizing: border-box;
+    font-family: ralway;
 }
 
 #meat{
-    /* font-size:large;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-end;
-    flex-direction: column; 
-    flex-wrap: wrap;
-    padding: 10px;
-    margin: 5px; */
     grid-area: mt;
     display: flex;
-    font-size: large;
     justify-content: flex-start;
-    align-items: flex-end;
+    align-items: flex-start;
     flex-direction: column;
     flex-wrap: wrap;
     padding: 10px;
     margin: 5px;
+    box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.5);
+    border: 1px solid white;
+    background-color: white;
 }
 
-.div1{
-    font-size:medium;
-    display: flex;
-    justify-content:center;
-    align-items: flex-start;
-}
-.div2{
-    font-size:medium;
-    display: flex;
-    justify-content:center;
-    align-items: flex-start;
-} 
 
 #vegitarian{
     grid-area: vt;
     display: flex;
-    font-size: large;
-    justify-content: flex-start;
-    align-items: flex-end;
+    justify-content:center;
+    align-items:center;
     flex-direction: column;
     flex-wrap: wrap;
     padding: 10px;
     margin: 5px;
+    box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.5);
+    border: 1px solid white;
+    background-color: white;
+
 }
 
 #fika{
     grid-area: fk;
     display: flex;
-    font-size: large;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-end;
-    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:wrap;
     padding: 10px;
     margin: 5px;
+    box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.5);
+    border: 1px solid white;
+    background-color: white;
 }
+
+
+.div1{
+    display: flex;
+    justify-content:center;
+    align-items: flex-start;
+}
+.div2{
+    display: flex;
+    justify-content:center;
+    align-items: flex-start;
+} 

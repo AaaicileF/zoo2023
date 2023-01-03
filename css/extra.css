@@ -1,8 +1,8 @@
-body{
+.body3{
     margin: 0px;
     padding: 0px; 
     display:grid;
-    height:100vh;
+    height:95vh;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size:x-large;
     background-color: rgb(255, 255, 255);
@@ -30,20 +30,9 @@ nav{
     display: flex;
     align-items: baseline;
     justify-content: space-evenly;
-    flex: 25;
     background-color: rgb(171, 118, 221);   
     margin-left: 2px;
     margin-right: 2px;
-}
-
-div{
-    grid-area: nv;
-    display: flex;
-    align-items: baseline;
-    justify-content: space-evenly;
-    flex: 55;
-    padding: 10px;
-    margin: 5px;
 }
 
 main{
@@ -56,163 +45,23 @@ main{
     grid-template-rows: 20% 80%;
     grid-template-areas:
     'tc tc tc'
-    'mt vt fk';
+    'pr1 pr2 pr3';
 }
 
 .title_card{
     display: flex;
     grid-area: tc;
-    justify-content: space-around;
+    justify-content: space-between;
     padding-left: 10px;
     padding-right: 10px;
 }
 
-#part1{
-    grid-area: mt; 
-    font-size:large;
-    display: flex;
-    justify-content:flex-start;
-    align-items: flex-start; 
-    flex-direction: column; 
-    flex-wrap: wrap;
-    padding: 10px;
-    margin: 5px;
-}
-
-#part2{
-    grid-area: vt;
-    font-size:large;
-    display: flex;
-    justify-content:flex-start;
-    align-items: flex-start; 
-    flex-direction: column; 
-    flex-wrap: wrap;
-    padding: 10px;
-    margin: 5px;
-}
-
-#part3{
-    grid-area: fk;
-    font-size:large;
-    display: flex;
-    justify-content:flex-start;
-    align-items:flex-start;
-    flex-direction: column; 
-    flex-wrap: wrap;
-    padding: 10px;
-    margin: 5px;
-}
-
-
-#part1 .bild{
-    width: 70%;
-}
-
-#bild1{
-    width: 85%;
-}
-
-/* ANDRA SIDAN BÖRJAR HÄR */
-
-
-
-.mat_kort1{
-    display: flex;
-    width: 100%;
-    flex-wrap: wrap;
-    justify-content:left;
-    align-items: center;
-    flex-direction: row;  
-}
-
-.mat_kort2{
-    display: flex;
-    width: 100%;
-    flex-wrap: wrap;
-    justify-content:left;
-    align-items: center;
-    flex-direction: row;  
-}
-
-.mat_kort .Bild {
-    width: 100%;
-    overflow: hidden;
-    object-fit:cover;
-}
-
-.Bild img {
-    width: 100%;
-}
-
-.Bild .text{
-    display: flex;
-    flex-direction: column-reverse;
-}
-
-.text {
-    font-size: 10px;
-    padding: 5px;
-    box-sizing: border-box;
-}
-
-#meat{
-    grid-area: mt;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-direction: column;
-    flex-wrap: wrap;
-    padding: 10px;
-    margin: 5px;
-    box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.5);
-    border: 1px solid white;
-    background-color: white;
-}
-
-
-#vegitarian{
-    grid-area: vt;
+.mat_kort{
     display: flex;
     justify-content:center;
-    align-items:center;
-    flex-direction: column;
-    flex-wrap: wrap;
-    padding: 10px;
-    margin: 5px;
-    box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.5);
-    border: 1px solid white;
-    background-color: white;
-
-}
-
-#fika{
-    grid-area: fk;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-    flex-wrap:wrap;
-    padding: 10px;
-    margin: 5px;
-    box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.5);
-    border: 1px solid white;
-    background-color: white;
+    flex-direction: column;    
 }
-
-.div1{
-    display: flex;
-    justify-content:center;
-    align-items: flex-start;
-}
-.div2{
-    display: flex;
-    justify-content:center;
-    align-items: flex-start;
-} 
-
-
-/* TREDJE SIDAN BÖRJAR HÄR */
-
 
 .bild{
     width: 80%;
@@ -232,7 +81,7 @@ main{
 
 
 .del1{
-    grid-area: mt;
+    grid-area: pr1;
     display: grid;
     text-decoration:solid;
     background-color: rgb(178, 195, 241);  
@@ -251,7 +100,7 @@ main{
     align-items: flex-start; 
     flex-direction: column; 
     flex-wrap: wrap;
-    padding: 20px;
+    padding: 40px;
     margin: 5px;
 }
 
@@ -263,14 +112,14 @@ main{
     align-items: flex-start; 
     flex-direction: column; 
     flex-wrap: wrap;
-    padding:20px;
-    margin: 5px;
+
+    margin: 10px;
 }
 
 
 
 .del2{
-    grid-area: vt;
+    grid-area: pr2;
     display: grid;
     text-decoration:solid;
     background-color: rgb(178, 195, 241);  
@@ -298,7 +147,7 @@ main{
     display: grid;
     text-decoration:solid;
     background-color: rgb(178, 195, 241);  
-    padding: 20px;
+    padding: 10px;
     margin: 2px; 
     grid-template-columns: 50% 50%;
     grid-template-areas:
@@ -314,7 +163,7 @@ main{
     align-items: flex-start; 
     flex-direction: column; 
     flex-wrap: wrap;
-    padding: 10px;
+    padding: 20px;
     margin: 5px;
 }
 
@@ -326,12 +175,12 @@ main{
     align-items: flex-end; 
     flex-direction: column; 
     flex-wrap: wrap;
-    padding: 10px;
+    padding: 20px;
     margin: 5px;
 }
 
 .del3{
-    grid-area: fk;
+    grid-area: pr3;
     display: flex;
     font-size: large;
     justify-content: flex-start;
