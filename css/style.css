@@ -77,6 +77,10 @@ main{
     flex-wrap: wrap;
     padding: 10px;
     margin: 5px;
+    height: 350px;
+    box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.5);
+    border: 1px solid white;
+    background-color: white; 
 }
 
 #part2{
@@ -89,6 +93,10 @@ main{
     flex-wrap: wrap;
     padding: 10px;
     margin: 5px;
+    height: 350px;
+    box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.5);
+    border: 1px solid white;
+    background-color: white; 
 }
 
 #part3{
@@ -99,8 +107,13 @@ main{
     align-items:flex-start;
     flex-direction: column; 
     flex-wrap: wrap;
-    padding: 10px;
-    margin: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    height: 400px;
+    box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.5);
+    border: 1px solid white;
+    background-color: white; 
 }
 
 
@@ -112,10 +125,8 @@ main{
     width: 85%;
 }
 
+
 /* ANDRA SIDAN BÖRJAR HÄR */
-
-
-
 .mat_kort1{
     display: flex;
     width: 100%;
@@ -134,14 +145,14 @@ main{
     flex-direction: row;  
 }
 
-.mat_kort .Bild {
+.mat_kort .Bild{
     width: 100%;
     overflow: hidden;
-    object-fit:cover;
+    object-fit:fill;
 }
 
 .Bild img {
-    width: 100%;
+    width: 80px;
 }
 
 .Bild .text{
@@ -150,9 +161,19 @@ main{
 }
 
 .text {
-    font-size: 10px;
+    font-size: 15px;
     padding: 5px;
     box-sizing: border-box;
+}
+
+body #meat{
+    display: flex;
+    align-items: center;
+}
+
+body #vegitarian{
+    display: flex;
+    align-items: center;
 }
 
 #meat{
@@ -164,11 +185,12 @@ main{
     flex-wrap: wrap;
     padding: 10px;
     margin: 5px;
+    width: 450px;
+    background: rgb(133, 221, 139);
     box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.5);
     border: 1px solid white;
     background-color: white;
 }
-
 
 #vegitarian{
     grid-area: vt;
@@ -179,6 +201,7 @@ main{
     flex-wrap: wrap;
     padding: 10px;
     margin: 5px;
+    background: rgb(133, 221, 139);
     box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.5);
     border: 1px solid white;
     background-color: white;
@@ -194,6 +217,7 @@ main{
     flex-wrap:wrap;
     padding: 10px;
     margin: 5px;
+    background: rgb(133, 221, 139);
     box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.5);
     border: 1px solid white;
     background-color: white;
@@ -215,19 +239,30 @@ main{
 
 
 .bild{
-    width: 80%;
+    width: 100px;
     padding: 10px;
     margin: 5px;
 }
 
-#bild2{
+/* #bild2{
     width: 60%;
     padding: 10px;
     margin: 5px;
-}
+} */
 
 #karta{
     width: 85%;
+}
+
+body .del1{
+    display: flex;
+    align-items: center;
+
+}
+body .del2{
+    display: flex;
+    align-items: center;
+
 }
 
 
@@ -238,6 +273,10 @@ main{
     background-color: rgb(178, 195, 241);  
     padding: 10px;
     margin: 2px; 
+    width: 450px;
+    background: rgb(171, 118, 221);
+    background: rgb(118, 221, 125);
+    box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.5);
     grid-template-columns: 50% 50%;
     grid-template-areas:
     'c1 c2';
@@ -279,6 +318,10 @@ main{
     grid-template-columns: 50% 50%;
     grid-template-areas:
     'c3 c4';
+    background: rgb(171, 118, 221);
+    background: rgb(118, 221, 125);
+    width: 450px;
+    box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.5);
 }
 
 #column3{
@@ -340,5 +383,8 @@ main{
     flex-wrap: wrap;
     padding: 10px;
     margin: 5px;
+    width: 450px;
+    background: rgb(118, 221, 125);
+    box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.5);
 }
  
