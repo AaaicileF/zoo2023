@@ -3,7 +3,7 @@ body{
     margin: 0px;
     padding: 0px; 
     display:grid;
-    height:96vh;
+    height:98vh;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size:x-large;
     /* background-color: rgb(255, 255, 255); */
@@ -55,7 +55,7 @@ main{
 .title_card{
     display: flex;
     grid-area: tc;
-    justify-content: space-evenly;
+    justify-content: space-around;
     padding-left: 10px;
     padding-right: 10px;
 }
@@ -65,13 +65,13 @@ main{
     grid-area: mt;
     display: grid;
     padding: 10px;
-    margin: 50px;
+    margin: 5px;
     width: 450px;
     grid-template-areas: 
-    'dv' 'dv'
-    'd2' 'd2';
-    grid-template-columns:400px 400px;
-    grid-template-rows: 100px 100px ;
+    'dv'
+    'd2';
+    grid-template-columns:400px;
+    grid-template-rows: 200px;
     gap:30px;
     
 }
@@ -80,8 +80,9 @@ main{
     grid-area: dv;
     display: flex;
     align-items:center;
-    width: 250px; /*ta bort vid behov*/
     justify-content: space-evenly;
+    width: 350px; /*ta bort vid behov*/
+    height: 170px;
     padding: 10px;
     margin: 15px;
     background: white;
@@ -97,10 +98,10 @@ main{
     justify-content: space-evenly;
     padding: 10px;
     margin: 15px;
-    width: 250px;
+    width: 350px;
+    height: 170px;;
     background: white;
     box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.5);
-
 }
 
 
@@ -111,10 +112,10 @@ main{
     margin: 5px;
     width: 450px;
     grid-template-areas: 
-    'dv' 'dv'
-    'd2' 'd2';
-    grid-template-columns:400px 400px;
-    grid-template-rows: 100px 100px ;
+    'dv'
+    'd2';
+    grid-template-columns:400px;
+    grid-template-rows: 200px;
     gap:30px;
 }
 
@@ -126,10 +127,10 @@ main{
     margin: 5px;
     width: 450px;
     grid-template-areas: 
-    'dv' 'dv'
-    'd2' 'd2';
-    grid-template-columns:400px 400px;
-    grid-template-rows: 100px 100px ;
+    'dv'
+    'd2';
+    grid-template-columns:400px;
+    grid-template-rows: 200px;
     gap:30px;
 }
 
@@ -173,6 +174,8 @@ main{
 .mat_kort2 .Bild{
     height: 150px;
     width: 100%;
+    margin: 10px;
+    padding: 15px;
     overflow: hidden;
     object-fit:fill;
 }
@@ -202,7 +205,8 @@ main{
     place-content: center;
     justify-self: end;
     font-size: 15px;
-    padding: 5px;
+    padding: 20px;
+    width: 130px;
     box-sizing: border-box;
 }
 
