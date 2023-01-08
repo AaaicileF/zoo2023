@@ -6,7 +6,6 @@ body{
     height:98vh;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size:x-large;
-    /* background-color: rgb(255, 255, 255); */
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows:10% 12% 80%;
     grid-template-areas:
@@ -44,20 +43,20 @@ main{
     padding: 10px;
     margin: 2px; 
     justify-content: space-evenly;
-    grid-template-columns: 32% 32% 33%;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 20% 80%;
     grid-template-areas:
-    'tc tc tc'
+    '...'
     'mt vt fk';
 }
 
-.title_card{
+/* .title_card{
     display: flex;
     grid-area: tc;
     justify-content: space-around;
     padding-left: 10px;
     padding-right: 10px;
-}
+} */
 
 #part1{
     grid-area: mt; 
@@ -120,6 +119,9 @@ main{
 
 /* ANDRA SIDAN BÖRJAR HÄR */
 
+main h2{
+    text-align: center;
+}
 
 #meat{
     grid-area: mt;
@@ -127,12 +129,13 @@ main{
     padding: 10px;
     margin: 5px;
     width: 450px;
+    justify-content: center;
     grid-template-areas: 
     'dv'
     'd2';
     grid-template-columns:400px;
     grid-template-rows: 200px;
-    gap:30px;
+    /* gap:30px; */
     
 }
 
@@ -175,7 +178,7 @@ main{
     'd2';
     grid-template-columns:400px;
     grid-template-rows: 200px;
-    gap:30px;
+    /* gap:30px; */
 }
 
 
@@ -190,7 +193,7 @@ main{
     'd2';
     grid-template-columns:400px;
     grid-template-rows: 200px;
-    gap:30px;
+    /* gap:30px; */
 }
 
 .mat_kort{
