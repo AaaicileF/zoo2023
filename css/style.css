@@ -72,7 +72,6 @@ main{
     margin: 5px;
     height: 300px;
     box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.5);
-    border: 1px solid white;
     background-color: rgb(118, 221, 125); 
 }
 
@@ -89,7 +88,6 @@ main{
     height: 300px;
     background: green;
     box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.5);
-    border: 1px solid white;
     background-color:  rgb(118, 221, 125); 
 }
 
@@ -101,12 +99,11 @@ main{
     align-items:flex-start;
     flex-direction: column; 
     flex-wrap: wrap;
-    margin-left: 5px;
-    margin-right: 5px;
+    padding: 10px;
+    margin: 5px;
     margin-bottom: 5px;
     height: 400px;
     box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.5);
-    border: 1px solid rgb(176, 235, 180);
     background-color: rgb(118, 221, 125); 
 }
 
@@ -143,15 +140,14 @@ main{
 .div1{
     grid-area: dv;
     display: flex;
-    align-items:flex-start;
+    align-items:center;
     justify-content: space-evenly;
-    width: 350px; /*ta bort vid behov*/
+    width: 350px;
     height: 170px;
     padding: 10px;
     margin: 15px;
-    background: white;
+    background: rgb(118, 221, 125);    
     box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.5);
-
 }
 
 
@@ -164,7 +160,7 @@ main{
     margin: 15px;
     width: 350px;
     height: 170px;;
-    background: white;
+    background: rgb(118, 221, 125);    
     box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.5);
 }
 
@@ -209,7 +205,6 @@ main{
     width: 100px;
     height: 150px;
     box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.5);
-    border: 1px solid white;
 }
 
 .mat_kort2{
@@ -223,7 +218,6 @@ main{
     width: 100px;
     height: 150px;
     box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.5);
-    border: 1px solid white;
 }
 
 .mat_kort .Bild{
@@ -256,8 +250,7 @@ main{
     13px 13px 13px 13px;
     border-image-repeat:
     repeat repeat;
-    border-image-source:
-    url("https://mdn.github.io/css-examples/tools/border-image-generator/border-image-4.png");
+    border-image-source: url('/media/examples/border-diamonds.png');
     border-style:
     solid;
 }   
@@ -267,7 +260,7 @@ main{
     grid-area: tx;
     display: flex;
     place-content: center;
-    justify-self: end;
+    justify-self: flex-start;
     font-size: 15px;
     padding: 20px;
     width: 130px;
@@ -291,6 +284,7 @@ main{
 
 #karta{
     width: 80%;
+    margin: 3px;
 }
 
 body .del1{
