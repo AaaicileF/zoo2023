@@ -19,7 +19,7 @@ header{
     display: flex;
     align-items: center;
     place-content: center;
-    background-color: rgb(171, 118, 221);
+    background-color: rgb(181, 124, 235);
     margin-top: 2px;
     margin-left: 2px;
     margin-right: 2px;
@@ -30,10 +30,20 @@ nav{
     display: flex;
     align-items: baseline;
     justify-content: space-evenly;
-    background-color: rgb(171, 118, 221);   
+    background-color: rgb(181, 124, 235);   
     margin-left: 2px;
     margin-right: 2px;
 }
+
+
+a:link, a:visited {
+    color: black;
+}
+    
+a:hover {
+        color: red;
+}
+
 
 
 main{
@@ -46,17 +56,10 @@ main{
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 20% 80%;
     grid-template-areas:
-    '...'
+    '. . .'
     'mt vt fk';
 }
 
-/* .title_card{
-    display: flex;
-    grid-area: tc;
-    justify-content: space-around;
-    padding-left: 10px;
-    padding-right: 10px;
-} */
 
 #part1{
     grid-area: mt; 
@@ -70,7 +73,7 @@ main{
     margin: 5px;
     height: 300px;
     box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.5);
-    background-color: rgb(118, 221, 125); 
+    background-color:  rgb(121, 230, 151);
 }
 
 #part2{
@@ -84,9 +87,8 @@ main{
     padding: 10px;
     margin: 5px;
     height: 300px;
-    background: green;
     box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.5);
-    background-color:  rgb(118, 221, 125); 
+    background-color:  rgb(121, 230, 151);
 }
 
 #part3{
@@ -102,23 +104,26 @@ main{
     margin-bottom: 5px;
     height: 400px;
     box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.5);
-    background-color: rgb(118, 221, 125); 
+    background-color:  rgb(121, 230, 151);
 }
 
-
-#part1 .bild{
-    width: 70%;
+main #part1 li{
+    margin: 25px;
+}
+main #part2 li{
+    margin: 25px;
 }
 
-#bild1{
-    width: 85%;
-    display: flex;
-    align-items: center;
+main #part3 li{
+    margin: 5px;
 }
-
 
 /* ANDRA SIDAN BÖRJAR HÄR */
 
+
+main h1{ 
+    text-align: center;
+}
 main h2{
     text-align: center;
 }
@@ -148,7 +153,7 @@ main h2{
     height: 170px;
     padding: 10px;
     margin: 15px;
-    background: rgb(118, 221, 125);    
+    background-color:  rgb(121, 230, 151);
     box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.5);
 }
 
@@ -162,7 +167,7 @@ main h2{
     margin: 15px;
     width: 350px;
     height: 170px;;
-    background: rgb(118, 221, 125);    
+    background-color:  rgb(121, 230, 151);    
     box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.5);
 }
 
@@ -278,7 +283,7 @@ main h2{
     margin: 3px;
 }
 
-#bild2{
+.bild2{
     width: 60%;
     padding: 5px;
     margin: 5px;
@@ -308,7 +313,7 @@ body .del2{
     padding: 10px;
     margin: 2px; 
     width: 450px;
-    background: rgb(118, 221, 125);
+    background-color:  rgb(121, 230, 151);
     box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.5);
     grid-template-columns: 50% 50%;
     grid-template-areas:
@@ -347,8 +352,7 @@ body .del2{
     padding: 10px;
     margin: 2px; 
     width: 450px;
-    background: rgb(118, 221, 125);
-    box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.5);
+    background-color:  rgb(121, 230, 151);    box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.5);
     grid-template-columns: 50% 50%;
     grid-template-areas:
     'c3 c4';
@@ -380,25 +384,25 @@ body .del2{
     'ne'
 }
 
-#uppe{
+.uppe{
     grid-area: up;
     font-size:16px;
     display: flex;
     width:10em;
-    justify-content:space-evenly;
+    justify-content:space-between;
     flex-direction: column; 
-    align-items: center; 
+    align-items: flex-start; 
     flex-wrap: wrap;
     padding: 5px;
     margin: 10px;
 }
 
-#nere{
+.nere{
     grid-area: ne;
     font-size:16px;
     display: flex;
     width:10em;
-    justify-content:space-evenly;
+    justify-content:space-between;
     align-items: center; 
     flex-direction: column; 
     flex-wrap: wrap;
@@ -417,7 +421,6 @@ body .del2{
     padding: 10px;
     margin: 5px;
     width: 450px;
-    background: rgb(118, 221, 125);
+    background-color:  rgb(121, 230, 151);    
     box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.5);
 }
- 
